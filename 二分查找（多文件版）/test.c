@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-extern int efcz(int arr[], int left, int right, int key);
+extern int efcz(int arr[], int left, int right, int key);//int arr[]蹇呴』鏈塠],鍚﹀垯璇嗗埆涓烘櫘閫氭暣褰紝浣嗕笅杈归偅涓猘rr涓嶇敤
 int main()
 {
 	int arr[10] = {0, 1,2,3,4,5,6,7,8,9 };
@@ -8,7 +8,8 @@ int main()
 	
 	int right = 9;
 	scanf("%d", &key);
-	int back = efcz(arr, left, right, key);//arr[10]是数组中的一个数，arr才是数组名，注意
+	int back = efcz(arr, left, right, key);//arr[10]鏄暟缁勪腑鐨勪竴涓暟锛宎rr鎵嶆槸鏁扮粍鍚嶏紝娉ㄦ剰
 	printf("%d", back);
 	return 0;
+
 }
