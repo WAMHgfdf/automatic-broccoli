@@ -3,10 +3,10 @@ int efcz(int arr[], int left, int right, int key)
 {
 	//int flag = 0;
 	//while (flag == 0 && left<right)
-   //Ğ¡ĞÄµÍ¼¶´íÎó£¬== 
+   //å°å¿ƒä½çº§é”™è¯¯ï¼Œ== 
 	while (left<=right)
 	{
-		int mid = (left + right) / 2;//Ê¹ÓÃmid¸üÓĞÒâÒå
+		int mid = (left + right) / 2;//ä½¿ç”¨midæ›´æœ‰æ„ä¹‰
 		if (key<arr[left] || key>arr[right])
 		{
 			return -1;
@@ -15,8 +15,8 @@ int efcz(int arr[], int left, int right, int key)
 		{
 			if (key < arr[mid])
 			{
-				right = mid-1;//±ØĞë¼Ó¼õÒ»£¬·ñÔòµ±leftÓërightÏàÁÚÊ±£¬mid==left,ËÀÑ­»·£¬¶øÕı³£µÄ¶ş·Ö²éÕÒ£¬¿ÉÒÔ½èÖú¼Ó¼õ1£¬¼°Ê±Ìø³öÑ­»·
-			}             //Í¬Àí£¬flag±êÖ¾ÈßÓà
+				right = mid-1;//å¿…é¡»åŠ å‡ä¸€ï¼Œå¦åˆ™å½“leftä¸rightç›¸é‚»æ—¶ï¼Œmid==left,æ­»å¾ªç¯ï¼Œè€Œæ­£å¸¸çš„äºŒåˆ†æŸ¥æ‰¾ï¼Œå¯ä»¥å€ŸåŠ©åŠ å‡1ï¼ŒåŠæ—¶è·³å‡ºå¾ªç¯
+			}             //åŒç†ï¼Œflagæ ‡å¿—å†—ä½™
 			else if (key > arr[mid])
 			{
 				left = mid+1;
@@ -30,7 +30,9 @@ int efcz(int arr[], int left, int right, int key)
 	}
 	/*if (left == right)
 	{
-		return -1;   //ifÅĞ¶¨ÔÚÕâÀïÃ»±ØÒª£¬ÒòÎªÉÏÃæÈô³É¹¦ÕÒµ½£¬ÏÂÃæÕâ¸öreturn²»»áÖ´ĞĞ
+		return -1;   //ifåˆ¤å®šåœ¨è¿™é‡Œæ²¡å¿…è¦ï¼Œå› ä¸ºä¸Šé¢è‹¥æˆåŠŸæ‰¾åˆ°ï¼Œä¸‹é¢è¿™ä¸ªreturnä¸ä¼šæ‰§è¡Œ
 	}*/
-	return -1;
+	return -1;//åˆ«å¿˜äº†æœªæ‰¾åˆ°çš„æƒ…å†µ
+	
+
 }
