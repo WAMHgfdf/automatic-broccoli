@@ -8,8 +8,9 @@ int main()
 	
 	int right = 9;
 	scanf("%d", &key);
-	int back = efcz(arr, left, right, key);//arr[10]是数组中的一个数，arr才是数组名，注意
+	int back = efcz(arr, left, right, key);//arr[10]是数组中的一个数，arr才是数组名，注意，记得找一个值接受
 	printf("%d", back);
 	return 0;
 
 }
+
